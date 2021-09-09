@@ -13,11 +13,6 @@ body{
   font-weight: bolder !important;
 }
 
-.btn-secondary{
-  background-color:  #f149b1 !important;
-}
-
-
 .cal{
   display: flex;
   flex-direction:column;
