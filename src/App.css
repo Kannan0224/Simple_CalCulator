@@ -43,8 +43,3 @@ body{
 .ans{
   flex-grow: 2;
 }
-
-.btn:focus{
-  outline:none !important;
-  border:none;
-}
