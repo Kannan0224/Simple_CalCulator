@@ -9,11 +9,23 @@ class Calculator extends React.Component{
         }
     }
     printvalue=e=>{
+        let audio=new Audio("/mixkit-select-click-1109.wav");
+       
+        // button-click-sound-effect.mp3
+        audio.play();
         let data=e.target.innerHTML;
         if(data==="Ans")
         {
-            let result=eval(this.state.answer);
-            this.setState({answer:result});
+            try {
+                let result=eval(this.state.answer);
+                this.setState({answer:result});
+
+            } catch (error) {
+               this.setState({answer:"Math Error.."});
+               let timeout=setTimeout(() => {
+                   this.setState({answer:""})
+               },1000);
+            }
         }
         else
          this.setState({answer:this.state.answer+data});
@@ -38,7 +50,7 @@ class Calculator extends React.Component{
     
     render()
     {
-        const button=[1,2,3,4,5,6,7,8,9,0,"+","-","/","*","Ans"];
+        const button=[1,2,3,4,5,6,7,8,9,0,"+","-","/","*","(",")","Ans"];
 
         const renderbtn=button.map((value)=>{
             if(value==="Ans")
