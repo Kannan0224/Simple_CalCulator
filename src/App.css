@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: #325767 !important;
+  background-color: #202249 !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,11 +34,14 @@ body{
 .btn-secondary{
   background-color: #163327 !important;
   border-color:none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .btn-secondary:focus{
-  border:none;
-  outline: none;
+  border:none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .num{
