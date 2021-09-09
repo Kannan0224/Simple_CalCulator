@@ -1,4 +1,5 @@
-# MyFirst React app ##Simple Calculator
+# MyFirst React app 
+## Simple Calculator
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
