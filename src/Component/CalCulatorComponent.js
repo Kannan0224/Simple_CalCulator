@@ -24,24 +24,12 @@ class Calculator extends React.Component{
                this.setState({answer:"Math Error.."});
                let timeout=setTimeout(() => {
                    this.setState({answer:""})
+                   clearTimeout(timeout);
                },1000);
             }
         }
         else
          this.setState({answer:this.state.answer+data});
-    //     if(parseInt(data)===NaN)
-    //     {
-    //         // this.setState({operation:data})
-    //         console.log(data);
-    //     }
-    //     else{
-
-    //     }
-    //     var result=this.state.value+data;
-    //     console.log();
-    //    this.setState({
-    //        value:result
-    //    });
     }
 
     clearvalue=()=>{
@@ -56,7 +44,7 @@ class Calculator extends React.Component{
             if(value==="Ans")
             return <button key={value} className="btn btn-lg btn-success num ans" onClick={this.printvalue}>{value}</button>
             else
-            return <button key={value} className="btn btn-lg btn-secondary num" onClick={this.printvalue}>{value}</button>
+            return <button key={value} className="btn btn-lg text-white btn-color num" onClick={this.printvalue}>{value}</button>
         })
         return(
             <div className="cal">

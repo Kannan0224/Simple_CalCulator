@@ -17,12 +17,12 @@ body{
   display: flex;
   flex-direction:column;
   width:325px;
-  height:320px;
+  height:350px;
   padding:12px;
   border: 1px solid #7282e6;
   justify-content: space-evenly;
   background-color:#5b5e9b;
-  border-top-left-radius: 20px; 
+  border-top-left-radius: 20px;
 }
 .numbers{
   display: flex;
@@ -31,18 +31,13 @@ body{
 
 }
 
-.btn-secondary{
+.btn-color{
   background-color: #163327 !important;
-  border-color:none;
   outline: none !important;
   box-shadow: none !important;
 }
 
-.btn-secondary:focus{
-  border:none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
+
 
 .num{
   margin:2px;
@@ -50,4 +45,10 @@ body{
 }
 .ans{
   flex-grow: 2;
+}
+
+input[type="text"]{
+  height:100px;
+  font-size:25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
