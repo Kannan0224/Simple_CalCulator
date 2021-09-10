@@ -38,7 +38,7 @@ class Calculator extends React.Component{
     
     render()
     {
-        const button=[1,2,3,4,5,6,7,8,9,0,"+","-","/","*","(",")","Ans"];
+        const button=[1,2,3,4,5,6,7,8,9,0,"+","-","/","*","(",")","%","Ans"];
 
         const renderbtn=button.map((value)=>{
             if(value==="Ans")
